@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #06080F;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-base-900 text-white antialiased;
+}
+
+/* Subtle starry background and grid overlay */
+.background-grid {
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 70%);
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md rounded-2xl shadow-glass border border-white/10;
+}
+
+.neon-text {
+  background: linear-gradient(90deg, #22D3EE, #818CF8, #60A5FA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+a.cta {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-neon-600 to-neon-700 text-white font-semibold shadow-lg shadow-cyan-900/30 transition-transform transform hover:scale-[1.03] active:scale-95;
+}
+
+.section {
+  @apply relative py-24 md:py-32;
+}

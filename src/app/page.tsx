@@ -71,7 +71,7 @@ export default function Page() {
               <h2 className="text-2xl font-semibold">Enterprise‑grade by design</h2>
               <p className="mt-3 text-white/70">ISO‑aligned controls, zero‑trust architecture, and observability baked in. Deploy on your cloud with full data residency.</p>
               <ul className="mt-6 space-y-3 text-white/80 text-sm list-disc list-inside">
-                <li>Edge‑first delivery with global latency < 50ms</li>
+                <li>Edge‑first delivery with global latency &lt; 50ms</li>
                 <li>End‑to‑end encryption and SSO integrations</li>
                 <li>Compliance kits: SOC2, HIPAA, GDPR</li>
               </ul>

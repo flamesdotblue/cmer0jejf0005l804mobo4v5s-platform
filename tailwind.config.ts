@@ -19,6 +19,12 @@ export default {
           600: '#38BDF8',
           700: '#818CF8',
         },
+        plasma: {
+          300: '#E879F9',
+          400: '#C084FC',
+          500: '#A78BFA',
+          600: '#8B5CF6',
+        }
       },
       backgroundImage: {
         'grid': "radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)",

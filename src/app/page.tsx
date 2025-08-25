@@ -1,38 +1,13 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import SplineScene from '@/components/SplineScene'
+import Hero from '@/components/Hero'
 
 export default function Page() {
   return (
     <main className="relative min-h-screen overflow-hidden">
       <Navbar />
 
-      <section className="section pt-40">
-        <SplineScene />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 backdrop-blur-xs">
-              <span className="size-1.5 rounded-full bg-neon-500 animate-pulse" />
-              Futuristic 3D metallic particle — holographic & glossy
-            </span>
-            <h1 className="mt-6 text-4xl md:text-6xl font-semibold leading-tight">
-              Build the future with immersive, real‑time interfaces
-            </h1>
-            <p className="mt-6 text-lg text-white/80">
-              Axiom blends cutting‑edge 3D visualization with cloud‑native systems to deliver experiences that feel like magic.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <a className="cta" href="#contact">
-                Launch your project
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5"><path d="M13.5 4.5a.75.75 0 0 0-1.5 0v6.75H5.25a.75.75 0 0 0 0 1.5H12v6.75a.75.75 0 0 0 1.5 0V12.75h6.75a.75.75 0 0 0 0-1.5H13.5V4.5Z"/></svg>
-              </a>
-              <a className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/15 bg-white/5 text-white/90 hover:bg-white/10 transition" href="#features">
-                Explore features
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <section id="features" className="section">
         <div className="absolute inset-0 -z-10 background-grid opacity-40" />
@@ -40,21 +15,21 @@ export default function Page() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="glass p-6">
               <div className="flex items-center gap-3">
-                <div className="size-10 rounded-lg bg-gradient-to-br from-neon-500 to-neon-700" />
+                <div className="size-10 rounded-lg bg-gradient-to-br from-plasma-600 to-neon-700" />
                 <h3 className="font-semibold">Holographic Interfaces</h3>
               </div>
               <p className="mt-3 text-white/70 text-sm">Layered depth and reflective materials for a truly next‑gen feel, powered by GPU‑accelerated rendering.</p>
             </div>
             <div className="glass p-6">
               <div className="flex items-center gap-3">
-                <div className="size-10 rounded-lg bg-gradient-to-br from-neon-600 to-neon-700" />
+                <div className="size-10 rounded-lg bg-gradient-to-br from-neon-600 to-plasma-600" />
                 <h3 className="font-semibold">Realtime Collaboration</h3>
               </div>
               <p className="mt-3 text-white/70 text-sm">Live presence and synchronized state across clients with secure edge streaming.</p>
             </div>
             <div className="glass p-6">
               <div className="flex items-center gap-3">
-                <div className="size-10 rounded-lg bg-gradient-to-br from-neon-400 to-neon-600" />
+                <div className="size-10 rounded-lg bg-gradient-to-br from-plasma-400 to-neon-600" />
                 <h3 className="font-semibold">AI‑Driven Workflows</h3>
               </div>
               <p className="mt-3 text-white/70 text-sm">Automate complex pipelines with context‑aware orchestration and adaptive UX.
